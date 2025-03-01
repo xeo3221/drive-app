@@ -6,4 +6,3 @@
 - [ ] Move folder open state in URL
 - [ ] Add auth
 - [ ] Add file uploading
-- [ ]
