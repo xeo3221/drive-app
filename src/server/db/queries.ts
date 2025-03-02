@@ -49,6 +49,7 @@ export const MUTATION = {
       name: string;
       size: number;
       url: string;
+      parent: number;
     };
     userId: string;
   }) {
