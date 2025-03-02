@@ -2,7 +2,6 @@ import "server-only";
 
 import { db } from "~/server/db";
 import {
-  DB_FileType,
   files_table as filesSchema,
   folders_table as foldersSchema,
 } from "~/server/db/schema";
@@ -41,6 +40,13 @@ export const QUERIES = {
     }
     return parents;
   },
+  getFolderById: async function (folderId: number) {
+    const folder = await db
+      .select()
+      .from(foldersSchema)
+      .where(eq(foldersSchema.id, folderId));
+    return folder[0];
+  },
 };
 
 export const MUTATION = {
@@ -55,7 +61,7 @@ export const MUTATION = {
   }) {
     return await db.insert(filesSchema).values({
       ...input.file,
-      parent: 1,
+      ownerId: input.userId,
     });
   },
 };
