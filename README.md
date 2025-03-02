@@ -2,7 +2,10 @@
 
 ## TODO
 
-- [ ] Set up database and data model
-- [ ] Move folder open state in URL
-- [ ] Add auth
-- [ ] Add file uploading
+- [x] Set up database and data model
+- [x] Move folder open state in URL
+- [x] Add auth
+- [x] Add file uploading
+- [ ] Add analytics
+- [ ] Add delete
+- [ ] Real homepage and onboarding
