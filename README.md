@@ -8,5 +8,5 @@
 - [x] Add file uploading
 - [x] Add analytics
 - [x] Make sort order is consistent
-- [ ] Add delete
+- [x] Add delete
 - [ ] Real homepage and onboarding
