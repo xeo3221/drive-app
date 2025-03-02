@@ -1,4 +1,3 @@
-import { Folder } from "lucide-react";
 export interface File {
   id: string;
   name: string;
@@ -7,6 +6,7 @@ export interface File {
   parent: string;
   size: string;
 }
+
 export type Folder = {
   id: string;
   name: string;
@@ -15,7 +15,7 @@ export type Folder = {
 };
 
 export const mockFolders: Folder[] = [
-  { id: "root", name: "Root", type: "folder", parent: null },
+  { id: "root", name: "root", type: "folder", parent: null },
   { id: "1", name: "Documents", type: "folder", parent: "root" },
   { id: "2", name: "Images", type: "folder", parent: "root" },
   { id: "3", name: "Work", type: "folder", parent: "root" },
