@@ -6,6 +6,7 @@
 - [x] Move folder open state in URL
 - [x] Add auth
 - [x] Add file uploading
-- [ ] Add analytics
+- [x] Add analytics
+- [x] Make sort order is consistent
 - [ ] Add delete
 - [ ] Real homepage and onboarding
