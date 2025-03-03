@@ -2,12 +2,10 @@
 
 import { FaGoogle } from "react-icons/fa";
 
-import { SignUp, useSignIn } from "@clerk/nextjs";
-import { redirect, useRouter } from "next/navigation";
+import { useSignIn } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { LoaderCircle, EyeIcon, EyeOffIcon } from "lucide-react";
-import { auth } from "@clerk/nextjs/server";
-import { Sign } from "node:crypto";
 import { useToast } from "~/hooks/use-toast";
 
 export default function SignInPage() {
@@ -109,14 +107,12 @@ export default function SignInPage() {
                       toast({
                         title: "Copied to clipboard!",
                         description: "Email copied successfully",
-                        variant: "default",
                       });
                     })
                     .catch(() => {
                       toast({
                         title: "Failed to copy",
                         description: "Please try again",
-                        variant: "destructive",
                       });
                     });
                 }}
@@ -149,14 +145,12 @@ export default function SignInPage() {
                       toast({
                         title: "Copied to clipboard!",
                         description: "Email copied successfully",
-                        variant: "default",
                       });
                     })
                     .catch(() => {
                       toast({
                         title: "Failed to copy",
                         description: "Please try again",
-                        variant: "destructive",
                       });
                     });
                 }}
