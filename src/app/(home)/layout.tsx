@@ -9,6 +9,7 @@ export default function HomePage(props: { children: React.ReactNode }) {
         <Link
           href={"https://github.com/xeo3221/"}
           className="ml-1 text-blue-300 hover:underline"
+          target="_blank"
         >
           {" "}
           Sebastian Świderki

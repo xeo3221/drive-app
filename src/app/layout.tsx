@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { PostHogProvider } from "./_providers/posthog-provider";
+import { Toaster } from "~/components/ui/toaster";
 export const metadata: Metadata = {
   title: "Drive App",
   description: "Super simple Google Drive alike app",
@@ -17,7 +18,10 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable}`}>
         <PostHogProvider>
-          <body>{children}</body>
+          <body>
+            {children}
+            <Toaster />
+          </body>
         </PostHogProvider>
       </html>
     </ClerkProvider>

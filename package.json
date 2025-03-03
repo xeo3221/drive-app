@@ -22,7 +22,9 @@
   "dependencies": {
     "@clerk/nextjs": "^6.12.1",
     "@libsql/client": "^0.9.0",
+    "@radix-ui/react-icons": "^1.3.2",
     "@radix-ui/react-slot": "^1.1.1",
+    "@radix-ui/react-toast": "^1.2.6",
     "@t3-oss/env-nextjs": "^0.10.1",
     "@uploadthing/react": "^7.3.0",
     "class-variance-authority": "^0.7.1",
@@ -35,6 +37,7 @@
     "posthog-js": "^1.224.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "uploadthing": "^7.5.2",
