@@ -80,7 +80,7 @@ export const MUTATIONS = {
     const rootFolder = await db
       .insert(foldersSchema)
       .values({
-        name: "Root",
+        name: "Main",
         parent: null,
         ownerId: userId,
       })

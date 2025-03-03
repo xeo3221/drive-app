@@ -13,26 +13,27 @@ export function FileRow(props: { file: typeof files_table.$inferSelect }) {
   return (
     <li
       key={file.id}
-      className="hover:bg-gray-750 border-b border-gray-700 px-6 py-4"
+      className="border-b border-blue-800/40 px-6 py-4 transition-colors hover:bg-blue-900/60"
     >
       <div className="grid grid-cols-12 items-center gap-4">
         <div className="col-span-6 flex items-center">
           <a
             href={file.url}
-            className="flex items-center text-gray-100 hover:text-blue-400"
+            className="flex items-center text-blue-100 transition-colors hover:text-blue-300"
             target="_blank"
           >
-            <FileIcon className="mr-3" size={20} />
+            <FileIcon className="mr-3 text-blue-400" size={20} />
             {file.name}
           </a>
         </div>
-        <div className="col-span-2 text-gray-400">File</div>
-        <div className="col-span-3 text-gray-400">{file.size}</div>
-        <div className="col-span-1 text-gray-400">
+        <div className="col-span-2 text-blue-400">File</div>
+        <div className="col-span-3 text-blue-400">{file.size}</div>
+        <div className="col-span-1">
           <Button
             variant={"ghost"}
             onClick={() => deleteFile(file.id)}
             aria-label="Delete file"
+            className="text-blue-400 hover:bg-blue-800/50 hover:text-blue-200"
           >
             <Trash2Icon size={20} />
           </Button>
@@ -49,20 +50,20 @@ export function FolderRow(props: {
   return (
     <li
       key={folder.id}
-      className="hover:bg-gray-750 border-b border-gray-700 px-6 py-4"
+      className="border-b border-blue-800/40 px-6 py-4 transition-colors hover:bg-blue-900/60"
     >
       <div className="grid grid-cols-12 items-center gap-4">
         <div className="col-span-6 flex items-center">
           <Link
             href={`/f/${folder.id}`}
-            className="flex items-center text-gray-100 hover:text-blue-400"
+            className="flex items-center text-blue-100 transition-colors hover:text-blue-300"
           >
-            <FolderIcon className="mr-3" size={20} />
+            <FolderIcon className="mr-3 text-blue-400" size={20} />
             {folder.name}
           </Link>
         </div>
-        <div className="col-span-3 text-gray-400"></div>
-        <div className="col-span-3 text-gray-400"></div>
+        <div className="col-span-3 text-blue-400"></div>
+        <div className="col-span-1"></div>
       </div>
     </li>
   );
